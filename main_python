@@ -1,0 +1,37 @@
+from turtle import *
+import math
+turtle = Turtle()
+screen = Screen()
+screen.bgcolor(0, 0, 0)
+turtle.speed(100)
+if input("Do you want me to draw? Answer y or n!") == "y":
+  def star():
+    for i in range(5):
+      turtle.forward(45)
+      turtle.left(144)
+    turtle.left(180 / Starint)
+  def circle(Cirkladii):
+    turtle.circle(Cirkladii)
+    turtle.right(360 / Cirklint)
+  def square():
+    for i in range(4):
+      turtle.forward(60)
+      turtle.left(90)
+    turtle.left(360 / Squarint)
+  Starint = int(input("How many stars?"))
+  Cirkladii = int(input("What should be the radius of the circle?"))
+  Cirklint = int(input("How many circles should be drawn?"))
+  Squarint = int(input("How many squares?"))
+  for i in range(Starint):
+    turtle.pencolor("red")
+    star()
+    turtle.pencolor("blue")
+    star()
+  for i in range(Cirklint):
+    turtle.pencolor("green")
+    circle(Cirkladii)
+  for i in range(Squarint):
+    turtle.pencolor("yellow")
+    square()
+else:
+  print("I'm sad but bye...")
